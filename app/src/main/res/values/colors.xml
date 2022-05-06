@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="LightBlue500">#D32F2F</color>
+<!--    <color name="LightBlue500">#03A9F4</color>-->
+    <color name="ThemeRed500">#D32F2F</color>
+    <color name="ThemeRed100">#FCB3B3</color>
+    <color name="LightBlue100">#B3E5fC</color>
+
+    <color name="FABRipple">#80FFFFFF</color>
+    <color name="Asphalt">#80707070</color>
+
+    <color name="Grey100">#F5F5F5</color>
+</resources>

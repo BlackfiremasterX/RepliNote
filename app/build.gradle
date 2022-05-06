@@ -1,0 +1,60 @@
+plugins {
+    id "com.android.application"
+    id "kotlin-android"
+    id "kotlin-kapt"
+    id "kotlin-parcelize"
+}
+
+android {
+    compileSdk 31
+
+    defaultConfig {
+        applicationId "com.deepdweller.replinote"
+        minSdk 21
+        targetSdk 30
+        versionCode 41
+        versionName "4.6"
+        resConfigs 'en','ru'
+        vectorDrawables.generatedDensities = []
+    }
+
+    kapt {
+        arguments {
+            arg("room.schemaLocation", "$projectDir/schemas")
+        }
+    }
+
+    buildTypes {
+        release {
+            crunchPngs false
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro"
+        }
+    }
+
+    kotlinOptions { jvmTarget = "1.8" }
+
+    buildFeatures { viewBinding true }
+
+    packagingOptions.resources {
+        excludes += ["DebugProbesKt.bin", "META-INF/**.version", "kotlin/**.kotlin_builtins", "kotlin-tooling-metadata.json"]
+    }
+}
+
+dependencies {
+    final def navVersion = "2.3.5"
+    final def roomVersion = "2.4.1"
+
+    implementation "androidx.preference:preference-ktx:1.2.0"
+
+    kapt "androidx.room:room-compiler:$roomVersion"
+    implementation "androidx.room:room-ktx:$roomVersion"
+    implementation "androidx.room:room-runtime:$roomVersion"
+
+    implementation "androidx.navigation:navigation-ui-ktx:$navVersion"
+    implementation "androidx.navigation:navigation-fragment-ktx:$navVersion"
+
+    implementation "org.ocpsoft.prettytime:prettytime:4.0.6.Final"
+    implementation "com.google.android.material:material:1.6.0"
+}

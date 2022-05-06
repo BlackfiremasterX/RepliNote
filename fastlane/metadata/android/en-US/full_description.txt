@@ -1,0 +1,36 @@
+Notally is a minimalistic note taking app with a beautiful material design and powerful features.
+
+<b>Organization</b>
+
+Create lists to stay on track
+Pin notes to always keep them at the top
+Add labels to your notes for quick organisation
+Archive notes to keep them around, but out of your way
+Create rich text notes with support for bold, italics, mono space and strike-through
+Add clickable links to notes with support for phone numbers, email addresses and web urls
+
+<b>Export notes in the following formats</b>
+
+• PDF
+• TXT
+• XML
+• JSON
+• HTML
+
+<b>Convenience</b>
+
+• Auto save
+• Dark mode
+• Completely free
+• No permissions required
+• APK size of 1.3 MB (1.7 MB uncompressed)
+
+<b>Privacy</b>
+
+There are no ads, trackers or analytics of any kind. All your notes are stored completely on and never leave your device.
+
+<b>Note</b>
+
+Due to a bug on Xiaomi's part, some MiUI devices might not be able to access the text formatting options.
+
+https://github.com/OmGodse/Notally
